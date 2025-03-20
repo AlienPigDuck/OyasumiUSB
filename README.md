@@ -51,6 +51,7 @@ __________
 nano ~/Library/LaunchAgents/com.user.usb_sleep.plist
 
 2.	Copy and paste the contents of the plist file on this github
+Save the file by pressing CTRL + O, then press Enter. Exit nano by pressing CTRL + X.
 
 3.	Set Permissions: Ensure the plist file has the correct permissions:
 		
