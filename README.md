@@ -18,7 +18,8 @@ nano ~/sleep_on_usb_removal.zsh
 
 3.	In the nano editor, paste the following script:
 		
-#!/bin/zsh
+#!/bin/zsh 
+
 pmset sleepnow
 
 4.	Save the file by pressing CTRL + O, then press Enter. Exit nano by pressing CTRL + X.
@@ -49,28 +50,7 @@ __________
 		
 nano ~/Library/LaunchAgents/com.user.usb_sleep.plist
 
-2.	Paste the following XML configuration exactly as below.  The spacing is important, so if any issues, please use the plist file on this github:
-
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>com.user.usb_sleep</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/usr/bin/osascript</string>
-        <string>-e</string>
-        <string>tell application "Finder" to sleep</string>
-    </array>
-    <key>WatchPaths</key>
-    <array>
-        <string>/Volumes/SleepUSB</string>
-    </array>
-    <key>RunAtLoad</key>
-    <true/>
-</dict>
-</plist>
+2.	Copy and paste the contents of the plist file on this github
 
 3.	Set Permissions: Ensure the plist file has the correct permissions:
 		
