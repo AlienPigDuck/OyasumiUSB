@@ -1,6 +1,13 @@
 # OyasumiUSB
 Dead Man's Switch to put your Mac to sleep
 
+**********
+**********
+Sorry. please don't try this. It causes unexpected behavior for any other usb thumb drives, so please don't do this. 
+I'll try to fix it when I can. 
+**********
+**********
+
 You're sitting in a coffee shop using your Mac, maybe zoning out while watching YouTube, and suddenly it's snatched from you and the thief runs off with it.  You're logged in, and all your personal data is available to the thief.  That would suck.  Or perhaps you're a journalist with sensitive data in the same situation.  It sounds a bit clichéd, but such grab-and-runs do take place.
 
 I live in a safe city and my threat model doesn't realistically need to account for this, but some people may need to, so I was thinking of a way to ensure my computer would sleep or power off automatically if taken away from me without my permission. 
