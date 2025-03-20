@@ -26,6 +26,8 @@ pmset sleepnow
 		
 chmod +x ~/sleep_on_usb_removal.zsh
 
+__________
+
 **Step 2: Set Up the USB Thumb Drive**
 1.	Plug in your USB thumb drive.
 2.	Open Disk Utility (found in Applications > Utilities).
@@ -39,6 +41,8 @@ mkdir /Volumes/SleepUSB
 5.	Copy the script to the USB drive:
 		
 cp ~/sleep_on_usb_removal.zsh /Volumes/SleepUSB/
+
+__________
 
 **Step 3: Setting Up the LaunchAgent in the User Library**
 1.	Open Terminal and create a plist file in the User Library:
@@ -76,6 +80,8 @@ chmod 644 ~/Library/LaunchAgents/com.user.usb_sleep.plist
 		
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.user.usb_sleep.plist
 
+__________
+
 **Steps to Set Up the Automator Quick Action**
 1.	Launch Automator from your Applications folder.
 2.	Choose "New Document" and select "Quick Action."
@@ -92,6 +98,8 @@ If it's not there, ensure you place it in your home directory or adjust the path
 8.  Testing the Quick Action - This setup should allow you to manually trigger the sleep script using the Automator Quick Action. 
 	•	Open the Services menu (found in the application menu or by right-clicking) and look for "Run Sleep Script."
 	•	Select it to see if it successfully puts your Mac to sleep.
+
+__________
 
 **Sanity checks if something goes wrong.**
 1. Ensure that the plist file is correctly formatted. You can use the plutil command to check for syntax errors:
